@@ -1,0 +1,18 @@
+.sign-in {
+  box-sizing: border-box;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 2px 15px #ffdf6c4b;
+}
+
+.button {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

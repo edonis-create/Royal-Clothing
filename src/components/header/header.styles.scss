@@ -25,6 +25,7 @@
       text-decoration: none;
       font-size: 1.5rem;
       position: relative;
+      cursor: pointer;
 
       &:hover {
         opacity: 1;
@@ -36,7 +37,6 @@
         background-color: #ffdf6c;
         position: absolute;
         top: 85%;
-        transition: width 0.2s;
       }
     }
 

@@ -8,3 +8,9 @@ body {
   --color-secondary: #ffdf6c;
   --color-secondary-lighter: #f0dea0;
 }
+*,
+*::after,
+*::before,
+** {
+  box-sizing: border-box;
+}
