@@ -1,0 +1,29 @@
+.sign-up {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden;
+  background-color: #202020;
+}
+.title {
+  text-align: center;
+  color: #ffdf6c;
+  margin-bottom: -30px;
+}
+.sign-up-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign-up-button span {
+  margin-top: 20px;
+  color: #ffdf6c;
+}
+.sign-up-button strong {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 5px;
+}

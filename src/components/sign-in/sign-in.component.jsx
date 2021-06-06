@@ -19,7 +19,7 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <div className="sign-in">
+      <div className={` sign-in`}>
         <span style={{ color: "#ffdf6c", textAlign: "center" }}>
           Sign in with email and password
         </span>
@@ -44,8 +44,24 @@ class SignIn extends React.Component {
             <CustomButton className="custom-button" type="submit">
               Sign In
             </CustomButton>
-            <CustomButton className="custom-button" onClick={signInWithGoogle}>
+            <CustomButton
+              type="button"
+              className="custom-button"
+              onClick={signInWithGoogle}
+            >
               Sign In with Google
+            </CustomButton>
+          </div>
+          <div className="sign-up-sign-in">
+            <span style={{ color: "#ffdf6c", marginBottom: "10px" }}>
+              -DONT HAVE AN ACCOUNT?-
+            </span>
+            <CustomButton
+              onClick={() => this.props.setFlip(true)}
+              type="button"
+              className="custom-button"
+            >
+              SIGN UP
             </CustomButton>
           </div>
         </form>

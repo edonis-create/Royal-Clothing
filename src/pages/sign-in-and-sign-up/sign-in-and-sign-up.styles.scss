@@ -1,6 +1,20 @@
 .sign-in-and-sign-up {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
+  width: 30vw;
+  position: relative;
+  box-shadow: 1px 2px 15px #ffdf6c4b;
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 10px;
+  left: 50%;
+  transition: 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) translate(-50%) rotateY(var(--rotate-y, 0));
+}
+.flip {
+  --rotate-y: 180deg;
 }
