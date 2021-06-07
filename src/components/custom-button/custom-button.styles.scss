@@ -14,10 +14,13 @@
   border: none;
   cursor: pointer;
   transition: 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: #ffdf6c;
+
     color: black;
-    border: 1px solid black;
   }
 }
