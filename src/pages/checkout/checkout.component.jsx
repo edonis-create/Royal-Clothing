@@ -8,6 +8,7 @@ import {
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
 
 import "./checkout.styles.scss";
+import StripeCheckoutButton from "../../components/stripe-button/stripe-button.component";
 
 const CheckoutPage = ({ cartItems, total }) => (
   <div className="checkout-page">
@@ -33,6 +34,12 @@ const CheckoutPage = ({ cartItems, total }) => (
     ))}
     <div className="total">
       <span style={{ color: "#ffdf6c" }}>Total: &euro;{total}</span>
+      <div className="test-warning" style={{ color: "red" }}>
+        *PLEASE USE THE FOLLOWING TEST CREDIT CARD CREDENTIALS *
+        <br />
+        4242 4242 4242 4242 - EXP:01/20 - CVV:123
+      </div>
+      <StripeCheckoutButton price={total} />
     </div>
   </div>
 );
