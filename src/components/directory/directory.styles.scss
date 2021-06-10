@@ -3,4 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media only screen and (max-width: 650px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100px;
+  }
 }
